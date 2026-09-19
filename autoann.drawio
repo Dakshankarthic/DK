@@ -1,0 +1,52 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="l8q71h4nJ72po3FjoNAU">
+    <mxGraphModel dx="1404" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1150" pageHeight="500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="stage1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#2B82C9;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="200" width="180" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="stage1_txt" parent="1" style="text;html=1;align=center;verticalAlign=top;resizable=0;points=[];autosize=0;strokeColor=none;fillColor=none;fontColor=#ffffff;fontFamily=Helvetica;" value="&lt;div style=&quot;font-size: 13px; font-weight: bold; opacity: 0.85; margin-bottom: 8px;&quot;&gt;Stage 1&lt;/div&gt;&lt;div style=&quot;font-size: 18px; font-weight: bold; line-height: 1.25; margin-bottom: 28px;&quot;&gt;Image&lt;br&gt;Acquisition &amp;amp;&lt;br&gt;Preprocessing&lt;/div&gt;&lt;div style=&quot;font-size: 13px; font-style: italic; line-height: 1.5; opacity: 0.95;&quot;&gt;CLAHE, Real-ESRGAN&lt;br&gt;Glare removal&lt;br&gt;Deskew, Upscale&lt;/div&gt;" vertex="1">
+          <mxGeometry height="340" width="170" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bubJRJTGLg_TZ0lPUJ31-3" edge="1" parent="1" source="stage2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=3;" target="stage3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="stage2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#84419E;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="200" width="180" x="240" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="stage2_txt" parent="1" style="text;html=1;align=center;verticalAlign=top;resizable=0;points=[];autosize=0;strokeColor=none;fillColor=none;fontColor=#ffffff;fontFamily=Helvetica;" value="&lt;div style=&quot;font-size: 13px; font-weight: bold; opacity: 0.85; margin-bottom: 8px;&quot;&gt;Stage 2&lt;/div&gt;&lt;div style=&quot;font-size: 18px; font-weight: bold; line-height: 1.25; margin-bottom: 28px;&quot;&gt;Layout&lt;br&gt;Segmentation&lt;/div&gt;&lt;div style=&quot;font-size: 13px; font-style: italic; line-height: 1.5; opacity: 0.95;&quot;&gt;SegFormer&lt;br&gt;Text vs Painting&lt;br&gt;6 region classes&lt;/div&gt;" vertex="1">
+          <mxGeometry height="340" width="170" x="240" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bubJRJTGLg_TZ0lPUJ31-7" edge="1" parent="1" source="stage3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=3;" target="stage4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="stage3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#299764;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="200" width="180" x="440" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="stage3_txt" parent="1" style="text;html=1;align=center;verticalAlign=top;resizable=0;points=[];autosize=0;strokeColor=none;fillColor=none;fontColor=#ffffff;fontFamily=Helvetica;" value="&lt;div style=&quot;font-size: 13px; font-weight: bold; opacity: 0.85; margin-bottom: 8px;&quot;&gt;Stage 3&lt;/div&gt;&lt;div style=&quot;font-size: 18px; font-weight: bold; line-height: 1.25; margin-bottom: 28px;&quot;&gt;HTR / OCR&lt;br&gt;Engine&lt;/div&gt;&lt;div style=&quot;font-size: 13px; font-style: italic; line-height: 1.5; opacity: 0.95;&quot;&gt;TrOCR (primary)&lt;br&gt;VLM fallback&lt;br&gt;Dual-track&lt;/div&gt;" vertex="1">
+          <mxGeometry height="340" width="170" x="445" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bubJRJTGLg_TZ0lPUJ31-5" edge="1" parent="1" source="stage4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=3;" target="stage5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="stage4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E07A1E;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="200" width="180" x="640" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="stage4_txt" parent="1" style="text;html=1;align=center;verticalAlign=top;resizable=0;points=[];autosize=0;strokeColor=none;fillColor=none;fontColor=#ffffff;fontFamily=Helvetica;" value="&lt;div style=&quot;font-size: 13px; font-weight: bold; opacity: 0.85; margin-bottom: 8px;&quot;&gt;Stage 4&lt;/div&gt;&lt;div style=&quot;font-size: 18px; font-weight: bold; line-height: 1.25; margin-bottom: 28px;&quot;&gt;LLM Post-&lt;br&gt;Correction&lt;/div&gt;&lt;div style=&quot;font-size: 13px; font-style: italic; line-height: 1.5; opacity: 0.95;&quot;&gt;Gita Press alignment&lt;br&gt;ByT5 byte-level&lt;br&gt;error fix&lt;/div&gt;" vertex="1">
+          <mxGeometry height="340" width="170" x="645" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="stage5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B83226;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="200" width="180" x="840" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="stage5_txt" parent="1" style="text;html=1;align=center;verticalAlign=top;resizable=0;points=[];autosize=0;strokeColor=none;fillColor=none;fontColor=#ffffff;fontFamily=Helvetica;" value="&lt;div style=&quot;font-size: 13px; font-weight: bold; opacity: 0.85; margin-bottom: 8px;&quot;&gt;Stage 5&lt;/div&gt;&lt;div style=&quot;font-size: 18px; font-weight: bold; line-height: 1.25; margin-bottom: 28px;&quot;&gt;Structured&lt;br&gt;Output&lt;/div&gt;&lt;div style=&quot;font-size: 13px; font-style: italic; line-height: 1.5; opacity: 0.95;&quot;&gt;TEI-XML, PAGE-XML&lt;br&gt;Searchable PDF&lt;br&gt;JSON Index&lt;/div&gt;" vertex="1">
+          <mxGeometry height="340" width="170" x="845" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bubJRJTGLg_TZ0lPUJ31-2" edge="1" parent="1" source="stage1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.265;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=3;" target="stage2_txt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
